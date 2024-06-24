@@ -181,4 +181,24 @@
     } else {
         echo "A {$pessoa['nome']} não é maior de idade, portanto não haverá entrevista.";
     }
+
+    echo "<br><br> ------------------------------------------- <br><br>";
+?>
+
+
+<?php
+// Criando uma classe e instanciando um objeto dessa classe
+    class Carro {
+        function corDoCarro() {
+            echo "O carro é azul<br>";
+        }
+    }
+
+    $corsa = new Carro();
+
+    $corsa->corDoCarro();
+
+    $corsa->ano = 2021;
+
+    echo "O carro é do ano de {$corsa->ano}";
 ?>

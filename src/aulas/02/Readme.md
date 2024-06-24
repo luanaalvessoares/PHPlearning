@@ -42,3 +42,38 @@
     Arrays associativos é uma possibilidade do PHP de nos permitir incluir o nome do dado dentro de um array. Cada nome de dado deve estar entre aspas e ser separado de seu valor por uma seta **(=>)**. Funciona como o array tradicional, seu diferencial durante a impressão é que não somente podemos indicar o índice do dado a ser impresso mas também o seu nome.
 
     • Podemos imprimir um dado de um array associativo informando o seu nome: _echo $arr['nome'];_, imprimindo, dessa maneira, o valor desse dado.
+
+
+07. _Classes e Objetos_
+    O PHP possui um paradigma de orientação a objeto. Podemos então criar classes e objetos e _objeto_ é considerado um tipo de dado. Objetos possuem metódos que são suas ações (o que farão a partir de uma função) e propriedades que são suas características. É importante lembrar que classe e objeto não são a mesma coisa, embora estejam intimamente relacionados. Veja a definição de cada um:
+    - **Classe**: uma classe é um modelo ou blueprint que define as propriedades e métodos que os objetos criados a partir dela terão. Veja um exemplo de sua estrutura:
+    ```PHP
+        <?php
+            class Carro {
+                public $marca;
+                public $modelo;
+
+                public function __construct($marca, $modelo) {
+                    $this->marca = $marca;
+                    $this->modelo = $modelo;
+                }
+
+                public function descricao() {
+                    return "Este carro é um $this->marca $this->modelo.";
+                }
+            }
+        ?>
+    ```
+
+    - **Objeto**: um objeto é uma instância de uma classe. É uma entidade concreta que é criada a partir da classe e que possui as propriedades e métodos definidos pela classe. Veja um exemplo de sua estrutura:
+    ```PHP
+        <?php
+            // Criação de um objeto a partir da classe Carro
+            $meuCarro = new Carro("Chevrolet", "Corsa");
+            echo $meuCarro->descricao(); // Imprime: Este carro é um Chevrolet Corsa.
+
+            // Criação de outro objeto a partir da classe Carro
+            $outroCarro = new Carro("Volkswagen", "Gol");
+            echo $outroCarro->descricao(); // Imprime: Este carro é um Volkswagen Gol.
+        ?>
+    ```
