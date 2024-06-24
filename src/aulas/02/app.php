@@ -15,6 +15,8 @@
     echo "<br>";
 
     echo "O resultado da subtração de 48 de 72 é: " . 48 - 72;
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
 
 
@@ -37,6 +39,8 @@
     } else {
         echo "<br>O tipo de dado não é um número inteiro.<br>";
     }
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
 
 
@@ -59,6 +63,8 @@
     } else {
         echo "<br>O tipo de dado não é um float.<br>";
     }
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
 
 
@@ -88,6 +94,8 @@
     $idade = 21;
 
     echo "Olá, eu me chamo $nome e tenho $idade anos.<br>";
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
 
 
@@ -131,4 +139,20 @@
     if(NULL == false) {
         echo "<br>O valor NULL é considerado falso.<br>";
     };
+
+    echo "<br><br> ------------------------------------------- <br><br>";
+?>
+
+
+<?php
+// Imprimindo e acessando dados de um array
+    $arr = [1, 2, 3];
+
+    print_r($arr);
+
+    echo "<br><br>";
+
+    echo $arr[0];
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
