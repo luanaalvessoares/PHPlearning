@@ -1,4 +1,4 @@
-### Day 01
+### Dia 01
 
 1. O método _echo_ é utilizado para imprimir uma mensagem na tela.
 

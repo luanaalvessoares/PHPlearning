@@ -87,8 +87,7 @@
 
 
 #### Variável de variável
-
-Conceito de "Variável de Variável": uma variável de variável em PHP permite usar o valor de uma variável como o nome de outra variável. Veja um exemplo:
+Conceito de "Variável de Variável": uma variável de variável em PHP permite usar o valor de uma variável como o nome de outra variável. É uma forma dinâmica de criar variáveis baseadas em valores de outras variáveis. Veja um exemplo:
 ```PHP
     <?php
         $nome = "cor";
@@ -103,4 +102,26 @@ Conceito de "Variável de Variável": uma variável de variável em PHP permite 
 • $$nome se torna $cor.
 • $cor é atribuído o valor "azul".
 
-É uma forma dinâmica de criar variáveis baseadas em valores de outras variáveis.
+
+#### Variável por referência
+Em PHP, podemos criar uma variável que referencia outra variável usando o operador _=&_. Isso significa que ambas as variáveis apontam para o mesmo valor na memória. Portanto, mudando o valor de uma, a outra automaticamente passa a ter o mesmo valor pois apontam para o mesmo local na memória. Usar referências é útil quando você precisa que duas variáveis compartilhem o mesmo valor e qualquer alteração em uma delas reflita na outra. Veja um exemplo:
+```PHP
+    <?php
+        $a = "Olá";
+        $b =& $a; // $b referencia $a
+
+        echo $a; // Imprime "Olá"
+        echo $a; // Imprime "Olá"
+
+        $b = "Mundo"; // Alterar $b também altera $a
+
+        echo $a; // Imprime "Mundo"
+        echo $b; // Imprime "Mundo"
+    ?>
+```
+
+**Explicação**
+• $a é definido como "Olá".
+• $b é definido como uma referência a $a usando =&.
+• Alterar $b para "Mundo" também altera $a.
+• Ambas as variáveis agora contêm "Mundo".

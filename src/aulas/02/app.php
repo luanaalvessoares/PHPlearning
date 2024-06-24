@@ -232,4 +232,23 @@
     $$nome = "Programador";
 
     echo $joao;
+
+    echo "<br><br> ------------------------------------------- <br><br>";
+?>
+
+
+<?php
+// Testando o conceito de "variável por referência"
+    $a = "<br>Olá<br>";
+    $b =& $a;
+
+    echo $a;
+    echo $b;
+
+    $b = "<br>Mundo<br>";
+
+    echo $a;
+    echo $b;
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
