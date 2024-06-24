@@ -83,3 +83,24 @@
     O tipo de dado _NULL_ é um tipo de dado especial que representa a ausência de valor. Comumente utilizado para iniciar variáveis que receberão valores posteriormente, é um tipo de dado simples em PHP que possui apenas um valor: _NULL_. Uma variável é considerada nula se foi atribuída a ela o valor _NULL_, se não foi definida ou se foi unset.
 
     • Podemos checar se um tipo de dado é realmente NULL utilizando a função **is_null()**, se o dado for realmente nulo, a função retornará _true_, do contrário retornará _false_. Para validarmos esse valor precisamos utilizar uma estrutura _if_.
+
+
+
+#### Variável de variável
+
+Conceito de "Variável de Variável": uma variável de variável em PHP permite usar o valor de uma variável como o nome de outra variável. Veja um exemplo:
+```PHP
+    <?php
+        $nome = "cor";
+        $$nome = "azul";
+
+        echo $cor; // Imprime "azul"
+    ?>
+```
+
+**Explicação**
+• $nome contém o valor "cor".
+• $$nome se torna $cor.
+• $cor é atribuído o valor "azul".
+
+É uma forma dinâmica de criar variáveis baseadas em valores de outras variáveis.

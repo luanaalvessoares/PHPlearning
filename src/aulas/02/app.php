@@ -224,3 +224,12 @@
 
     echo "<br><br> ------------------------------------------- <br><br>";
 ?>
+
+
+<?php
+// Testando o conceito de "variável de variável"
+    $nome = "Pedro";
+    $$nome = "Programador";
+
+    echo $joao;
+?>
