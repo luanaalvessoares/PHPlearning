@@ -36,3 +36,9 @@
     **Importante: a função _echo_ do PHP faz a conversão de uma informação para _string_ para que essa possa ser impressa na tela. Portanto, não é possível a impressão de um array a partir de um _echo_.**
 
     **Importante: todo índice começa a partir do 0 (zero). Tanto em arrays, objetos ou outros tipos de dados; o primeiro item vai ter sempre o índice 0, o segundo item vai ter índice 1 e assim por diante...**
+
+
+06. _Arrays Associativos (conjuntos de chaves e valores)_
+    Arrays associativos é uma possibilidade do PHP de nos permitir incluir o nome do dado dentro de um array. Cada nome de dado deve estar entre aspas e ser separado de seu valor por uma seta **(=>)**. Funciona como o array tradicional, seu diferencial durante a impressão é que não somente podemos indicar o índice do dado a ser impresso mas também o seu nome.
+
+    • Podemos imprimir um dado de um array associativo informando o seu nome: _echo $arr['nome'];_, imprimindo, dessa maneira, o valor desse dado.

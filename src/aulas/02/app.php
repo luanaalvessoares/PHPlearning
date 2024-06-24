@@ -156,3 +156,29 @@
 
     echo "<br><br> ------------------------------------------- <br><br>";
 ?>
+
+
+<?php
+// Imprimindo e acessando dados de um array associativo
+    $cachorro = ["nome" => "Pluto", "idade" => 2, "cor" => "preto", "peso" => 5];
+
+    print_r($cachorro);
+
+    echo "<br><br>";
+
+    echo "Meu cachorro se chama {$cachorro['nome']} e ele já tem {$cachorro['idade']} anos de idade. Ele é todo {$cachorro['cor']} e pesa {$cachorro['peso']}kg.";
+
+    echo "<br><br> ------------------------------------------- <br><br>";
+?>
+
+
+<?php
+// O desafio é criar um array associativo com dados de uma pessoa e verificar com um if() se a pessoa é maior ou menor de idade
+    $pessoa = ["nome" => "Ana", "cidade" => "São Paulo", "idade" => 19, "mesAniversario" => "maio", "altura" => 1.69];
+
+    if($pessoa['idade'] >= 18) {
+        echo "O nome dela é {$pessoa['nome']}, veio da cidade de {$pessoa['cidade']}, mede {$pessoa['altura']} e já é maior de idade, fez {$pessoa['idade']} anos em {$pessoa['mesAniversario']}.";
+    } else {
+        echo "A {$pessoa['nome']} não é maior de idade, portanto não haverá entrevista.";
+    }
+?>
