@@ -3,18 +3,14 @@
     $number01 = 56;
     $number02 = 23;
 
-    echo "O resultado da soma de $number01 e $number02 é: " . $number01 + $number02;
-
-    echo "<br>";
+    echo "<br>O resultado da soma de $number01 e $number02 é: " . $number01 + $number02 . "<br>";
 
     $number03 = 28;
     $number04 = 12;
 
-    echo "O resultado de $number03 - $number04 é: " . $number03 - $number04;
+    echo "<br>O resultado de $number03 - $number04 é: " . $number03 - $number04 . "<br>";
 
-    echo "<br>";
-
-    echo "O resultado da subtração de 48 de 72 é: " . 48 - 72;
+    echo "<br>O resultado da subtração de 48 de 72 é: " . 48 - 72 . "<br>";
 
     echo "<br><br> ------------------------------------------- <br><br>";
 ?>
@@ -93,7 +89,7 @@
     $nome = "João";
     $idade = 21;
 
-    echo "Olá, eu me chamo $nome e tenho $idade anos.<br>";
+    echo "<br>Olá, eu me chamo $nome e tenho $idade anos.";
 
     echo "<br><br> ------------------------------------------- <br><br>";
 ?>
@@ -200,5 +196,31 @@
 
     $corsa->ano = 2021;
 
-    echo "O carro é do ano de {$corsa->ano}";
+    echo "<br>O carro é do ano de {$corsa->ano}";
+
+    echo "<br><br> ------------------------------------------- <br><br>";
+?>
+
+
+<?php
+// Checando se um dado é NULL
+    $valorNulo = NULL;
+
+    if(is_null($valorNulo)) {
+        echo "<br>O tipo de dado é um NULL.<br>";
+    };
+
+    if(is_null("Uma string aqui")) {
+        echo "<br>O tipo de dado é um NULL.<br>";
+    } else {
+        echo "<br>O tipo de dado não é um NULL.<br>";
+    }
+
+    if(is_null(5)) {
+        echo "<br>O tipo de dado é um NULL.<br>";
+    } else {
+        echo "<br>O tipo de dado não é um NULL.<br>";
+    }
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
