@@ -47,4 +47,29 @@
 
     echo "<br>O novo nome do cliente agora é $name<br>";
 
+    echo "<br><br> ------------------------------------------- <br><br>";
+?>
+
+
+<?php
+// Exemplo de uma variável declarada como static
+    function contador() {
+        static $contagem = 0; // Declaração de uma variável estática
+        $contagem++;
+        echo "$contagem<br>";
+    }
+
+    contador(); // Imprime 1
+    contador(); // Imprime 2
+    contador(); // Imprime 3
+
+    function saudacao() {
+        static $cumprimento = "<br>Olá";
+        $cumprimento .= "!";
+        echo "$cumprimento<br>";
+    }
+    
+    saudacao(); // Imprime "Olá!"
+    saudacao(); // Imprime "Olá!!"
+    saudacao(); // Imprime "Olá!!!"
 ?>
