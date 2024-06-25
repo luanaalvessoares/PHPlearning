@@ -13,3 +13,17 @@ O escopo static refere-se a variáveis que mantêm seu valor entre diferentes ch
 
 04. _Escopo dos parâmetros_
 O escopo dos parâmetros refere-se às variáveis que são passadas para uma função ou método como argumentos. Esses parâmetros são tratados como variáveis locais dentro da função ou método, o que significa que eles são acessíveis apenas dentro do corpo da função onde foram definidos. Eles são inicializados com os valores fornecidos quando a função é chamada e não afetam as variáveis globais ou de outros escopos. Após a execução da função, os parâmetros são destruídos e seus valores são descartados.
+
+
+#### Operadores e expressões
+A ordem das operações matemáticas em PHP segue as mesmas regras da aritmética tradicional, também conhecida como "ordem de precedência". Essas regras determinam a sequência em que as operações são realizadas quando há múltiplas operações em uma expressão.
+
+**Ordem de Precedência**
+    1. **Parênteses:** As expressões dentro de parênteses são avaliadas primeiro.
+    2. **Exponenciação:** Operadores de exponenciação (**).
+    3. **Multiplicação, Divisão e Módulo:** (*, /, %).
+    4. **Adição e Subtração:** (+, -).
+
+**Associatividade**
+    • **Esquerda para Direita:** A maioria das operações (multiplicação, divisão, adição, subtração) é associativa da esquerda para a direita.
+    • **Direita para Esquerda:** A exponenciação (**) é associativa da direita para a esquerda.

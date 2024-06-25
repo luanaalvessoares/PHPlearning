@@ -94,5 +94,24 @@
 
     soma(2, 3); // Imprime 5
     soma($primeiroValor, $segundoValor); // Imprime 14
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
+
+
+<?php
+// Exercícios sobre a ordem das operações matemáticas
+    $resultado = 2 + 3 * 4; // 3 * 4 é calculado primeiro, depois 2 + 12
+    echo "<br> $resultado <br>"; // Imprime 14
+
+    $resultado = (2 + 3) * 4; // 2 + 3 é calculado primeiro, depois 5 * 4
+    echo "<br> $resultado <br>"; // Imprime 20
+
+    $resultado = 2 + 3 * 4 / 2; // 3 * 4 é calculado primeiro, depois 12 / 2, e então 2 + 6
+    echo "<br> $resultado <br>"; // Imprime 8
+
+    $resultado = 2 ** 3 ** 2; // 3 ** 2 é calculado primeiro, depois 2 ** 9
+    echo "<br> $resultado <br>"; // Imprime 512
+?>
+
 
