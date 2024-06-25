@@ -4,6 +4,8 @@
 
     echo "Usuário $userName <br>";
     echo "O nome do usuário é $userName e até o momento não temos informações sobre seu sobrenome. <br>";
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
 
 
@@ -25,6 +27,8 @@
 
     echo "<br> $firstPart $lastPart <br>";
     echo $firstPart . $lastPart;
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
 
 
