@@ -112,6 +112,16 @@
 
     $resultado = 2 ** 3 ** 2; // 3 ** 2 é calculado primeiro, depois 2 ** 9
     echo "<br> $resultado <br>"; // Imprime 512
+
+
+    $valor1 = "5";
+    $valor2 = 12;
+
+    $operacao = $valor1 * $valor2;
+
+    echo "<br>" . $operacao . "<br>";
+
+    echo gettype($operacao); // Imprime 'integer' porque o PHP automaticamente converte a string "5" para o número 5 antes de realizar a multiplicação, seguindo a coerção de tipos para operações aritméticas
 ?>
 
 

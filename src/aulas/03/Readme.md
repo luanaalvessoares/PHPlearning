@@ -27,3 +27,30 @@ A ordem das operações matemáticas em PHP segue as mesmas regras da aritmétic
 **Associatividade**
     • **Esquerda para Direita:** A maioria das operações (multiplicação, divisão, adição, subtração) é associativa da esquerda para a direita.
     • **Direita para Esquerda:** A exponenciação (**) é associativa da direita para a esquerda.
+
+##### Operadores aritméticos
+Os operadores aritméticos em PHP são usados para realizar operações matemáticas básicas. Aqui estão os principais:
+
+    1. **Adição (+)**
+        • Soma dois valores.
+        • Exemplo: 3 + 2 resulta em 5.
+
+    2. **Subtração (-)**
+        • Subtrai o segundo valor do primeiro.
+        • Exemplo: 5 - 2 resulta em 3.
+
+    3. **Multiplicação (*)**
+        • Multiplica dois valores.
+        • Exemplo: 4 * 3 resulta em 12.
+
+    4. **Divisão (/)**
+        • Divide o primeiro valor pelo segundo.
+        • Exemplo: 10 / 2 resulta em 5.
+
+    5. **Módulo (%)**
+        • Retorna o resto da divisão do primeiro valor pelo segundo.
+        • Exemplo: 7 % 3 resulta em 1.
+
+    6. **Exponenciação (**)**
+        • Eleva o primeiro valor à potência do segundo.
+        • Exemplo: 2 ** 3 resulta em 8.
