@@ -10,3 +10,6 @@ Escopo global é basicamente tudo que está ao redor de escopos protegidos por c
 
 03. _Escopo static_
 O escopo static refere-se a variáveis que mantêm seu valor entre diferentes chamadas de função. Uma variável declarada com static dentro de uma função não perde seu valor quando a execução da função termina, diferente das variáveis locais comuns. Em vez disso, ela retém o último valor atribuído a ela e esse valor é utilizado na próxima vez que a função for chamada. As variáveis static são úteis quando você precisa de uma variável que mantenha seu estado entre várias execuções da função, mas não quer usar variáveis globais.
+
+04. _Escopo dos parâmetros_
+O escopo dos parâmetros refere-se às variáveis que são passadas para uma função ou método como argumentos. Esses parâmetros são tratados como variáveis locais dentro da função ou método, o que significa que eles são acessíveis apenas dentro do corpo da função onde foram definidos. Eles são inicializados com os valores fornecidos quando a função é chamada e não afetam as variáveis globais ou de outros escopos. Após a execução da função, os parâmetros são destruídos e seus valores são descartados.

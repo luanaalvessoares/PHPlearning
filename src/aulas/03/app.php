@@ -72,4 +72,27 @@
     saudacao(); // Imprime "Olá!"
     saudacao(); // Imprime "Olá!!"
     saudacao(); // Imprime "Olá!!!"
+
+    echo "<br><br> ------------------------------------------- <br><br>";
 ?>
+
+<?php
+    $nome = "João";
+    $primeiroValor = 5;
+    $segundoValor = 9;
+
+    function cumprimentar($nome) {
+        echo "<br>Olá, $nome!<br>";
+    }
+
+    cumprimentar("Ana"); // Imprime "Olá, Ana!"
+    cumprimentar($nome); // Imprime "Olá, João!"
+
+    function soma($a, $b) {
+        echo "<br>" . $a + $b . "<br>";
+    }
+
+    soma(2, 3); // Imprime 5
+    soma($primeiroValor, $segundoValor); // Imprime 14
+?>
+
