@@ -223,3 +223,13 @@ Os operadores de atribuição em PHP são usados para definir valores para vari�
                 echo $a; // Imprime: Olá, mundo!
             ?>
         ```
+
+
+07. _Operador Ternário_
+O operador ternário é uma forma concisa de realizar uma operação condicional em PHP. Ele é uma alternativa compacta à estrutura if-else, permitindo que você escreva expressões condicionais em uma única linha. Veja a sintaxe:
+    ```PHP
+        (condition) ? expression_if_true : expression_if_false;
+    ```
+        • condition: Uma expressão que é avaliada como true ou false.
+        • expression_if_true: A expressão que é retornada se condition for true.
+        • expression_if_false: A expressão que é retornada se condition for false.

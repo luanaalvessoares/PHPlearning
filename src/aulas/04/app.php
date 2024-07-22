@@ -264,3 +264,25 @@
 
     echo "<br><br> ------------------------------------------- <br><br>";
 ?>
+
+
+<?php
+// Uso do operador ternário no PHP
+    $pessoaIdade = 21;
+
+    $maioridade = ($pessoaIdade >= 18) ? "Já pode digirir, é maior de idade." : "Ainda não pode dirigir, é menor de idade.";
+    
+    echo "<br> $maioridade <br>";
+
+    echo "<br><br> ------------------------------------------- <br><br>";
+
+
+    function verificarParOuImpar($numeroParImpar) {
+        return ($numeroParImpar % 2 == 0) ? "Par" : "Ímpar";
+    }
+
+    echo "<br>" . verificarParOuImpar(10) . "<br>"; // Imprime: Par
+    echo "<br>" . verificarParOuImpar(7) . "<br>";  // Imprime: Ímpar
+
+    echo "<br><br> ------------------------------------------- <br><br>";
+?>
