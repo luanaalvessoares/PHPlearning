@@ -222,3 +222,45 @@
 
     echo "<br><br> ------------------------------------------- <br><br>";
 ?>
+
+<?php
+// Operadores de Cast
+
+    // Convertendo para Inteiro
+    $valor1 = "123";
+    $valorInteiro = (int) $valor1;
+    echo "<br> $valorInteiro <br>"; // 123
+
+
+    // Convertendo para Booleano
+    $valor2 = 1;
+    $valorBooleano = (bool) $valor2;
+    echo "<br> $valorBooleano <br>"; // bool(true)
+
+
+    // Convertendo para Ponto Flutuante
+    $valor3 = "12.34";
+    $valorFloat = (float) $valor3;
+    echo "<br> $valorFloat <br>"; // 12.34
+
+
+    // Convertendo para String
+    $valor4 = 123;
+    $valorString = (string) $valor4;
+    echo "<br> $valorString <br>"; // 123
+
+
+    // Convertendo para Array
+    $valor5 = "123";
+    $valorArray = (array) $valor5;
+    echo "<br> $valorArray <br>"; // Array ( [0] => 123 )
+
+
+    // Convertendo para Objeto
+    $valor6 = "123";
+    $valorObjeto = (object) $valor6;
+    echo "<br> $valorObjeto->scalar <br>"; // Imprime: 123
+    
+
+    echo "<br><br> ------------------------------------------- <br><br>";
+?>

@@ -145,3 +145,18 @@ Os operadores lógicos são usados para combinar ou inverter condições boolean
                 var_dump(!$a); // false, porque $a é true
             ?>
         ```
+
+
+05. _Operador de Cast_
+O operador de cast em PHP é usado para converter uma variável de um tipo de dado para outro. A conversão pode ser feita explicitamente (usando o operador de cast) ou implicitamente (automaticamente pelo PHP).
+
+    **Tipos de Casts**
+        Conheça os principais tipos de cast disponíveis em PHP:
+
+        • **(int) ou (integer)**: Converte para inteiro.
+        • **(bool) ou (boolean)**: Converte para booleano.
+        • **(float), (double), ou (real)**: Converte para ponto flutuante.
+        • **(string)**: Converte para string.
+        • **(array)**: Converte para array.
+        • **(object)**: Converte para objeto.
+        • **(unset)**: Converte para NULL.
