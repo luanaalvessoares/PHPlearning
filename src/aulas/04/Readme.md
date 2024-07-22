@@ -31,48 +31,43 @@ Os operadores de auto incremento e decremento são usados para aumentar ou dimin
 
 • **Operador de auto incremento**
     1. **Pré-incremento**
-
         • Incrementa a variável em 1 e depois retorna o valor. Veja o exemplo:
-
-        ```PHP
-            <?php
-                $a = 5;
-                echo ++$a; // Imprime 6
-            ?>
-        ```
+            ```PHP
+                <?php
+                    $a = 5;
+                    echo ++$a; // Imprime 6
+                ?>
+            ```
     
     2. **Pós-incremento**
-
         • Retorna o valor da variável e depois incrementa em 1. Veja o exemplo:
-        ```PHP
-            <?php
-                $a = 5;
-                echo $a++; // Imprime 5
-                echo $a;   // Imprime 6
-            ?>
-        ```
+            ```PHP
+                <?php
+                    $a = 5;
+                    echo $a++; // Imprime 5
+                    echo $a;   // Imprime 6
+                ?>
+            ```
 
 • **Operador de auto decremento**
     1. **Pré-decremento**
         • Decrementa a variável em 1 e depois retorna o valor. Veja o exemplo:
-
-        ```PHP
-            <?php
-                $a = 5;
-                echo --$a; // Imprime 4
-            ?>
-        ```
+            ```PHP
+                <?php
+                    $a = 5;
+                   echo --$a; // Imprime 4
+                ?>
+            ```
     
     2. **Pós-decremento**
-
         • Retorna o valor da variável e depois decrementa em 1. Veja o exemplo:
-        ```PHP
-            <?php
-                $a = 5;
-                echo $a--; // Imprime 5
-                echo $a;   // Imprime 4
-            ?>
-        ```
+            ```PHP
+                <?php
+                    $a = 5;
+                    echo $a--; // Imprime 5
+                    echo $a;   // Imprime 4
+                ?>
+            ```
 
 
 03. _Operadores de comparação_
