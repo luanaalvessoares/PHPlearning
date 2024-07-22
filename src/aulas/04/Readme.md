@@ -68,3 +68,80 @@ Os operadores de auto incremento e decremento são usados para aumentar ou dimin
                 echo $a;   // Imprime 4
             ?>
         ```
+
+
+03. _Operadores de comparação_
+Os operadores de comparação em PHP são usados para comparar valores.
+
+    1. **Maior (>)**
+        • Verifica se o valor à esquerda é maior que o valor à direita. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = 10;
+                $b = 5;
+                var_dump($a > $b); // true pois 10 é maior que 5
+            ?>
+        ```
+
+    2. **Maior ou Igual (>=)**    
+        • Verifica se o valor à esquerda é maior ou igual ao valor à direita. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = 10;
+                $b = 10;
+                var_dump($a >= $b); // true pois 10 é igual a 10
+            ?>
+        ```
+
+    3. **Menor (<)**    
+        • Verifica se o valor à esquerda é menor que o valor à direita. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = 6;
+                $b = 15;
+                var_dump($a < $b); // true pois 6 é menor que 15
+            ?>
+        ```
+
+    4. **Menor ou Igual (<=)**    
+        • Verifica se o valor à esquerda é menor ou igual ao valor à direita. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = 10;
+                $b = 10;
+                var_dump($a <= $b); // true pois 10 é igual a 10
+            ?>
+        ```
+
+
+04. _Operadores lógicos_
+Os operadores lógicos são usados para combinar ou inverter condições booleanas.
+
+    1. **Operador && (E)**
+        • Retorna true se todas as expressões forem verdadeiras - comparadas - forem verdadeiras, podendo serem expressões simples ou até mesmo operações. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = true;
+                $b = false;
+                var_dump($a && $b); // false, porque $b é false
+            ?>
+        ```
+
+    2. **Operador || (OU)**    
+        • Retorna true se pelo menos uma das expressões comparadas for verdadeira. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = true;
+                $b = false;
+                var_dump($a || $b); // true, porque $a é true
+            ?>
+        ```
+
+    3. **Operador ! (NÃO)**    
+        • Inverte o valor booleano da expressão. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = true;
+                var_dump(!$a); // false, porque $a é true
+            ?>
+        ```
