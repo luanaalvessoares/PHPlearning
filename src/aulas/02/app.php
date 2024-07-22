@@ -231,7 +231,7 @@
     $nome = "Pedro";
     $$nome = "Programador";
 
-    echo $joao;
+    echo $Pedro; // Programador
 
     echo "<br><br> ------------------------------------------- <br><br>";
 ?>
@@ -242,13 +242,13 @@
     $a = "<br>Olá<br>";
     $b =& $a;
 
-    echo $a;
-    echo $b;
+    echo $a; // Olá
+    echo $b; // Olá
 
     $b = "<br>Mundo<br>";
 
-    echo $a;
-    echo $b;
+    echo $a; // Mundo
+    echo $b; // Mundo
 
     echo "<br><br> ------------------------------------------- <br><br>";
 ?>

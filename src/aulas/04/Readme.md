@@ -160,3 +160,66 @@ O operador de cast em PHP é usado para converter uma variável de um tipo de da
         • **(array)**: Converte para array.
         • **(object)**: Converte para objeto.
         • **(unset)**: Converte para NULL.
+
+
+06. _Operadores de Atribuição_
+Os operadores de atribuição em PHP são usados para definir valores para variáveis. O operador de atribuição mais básico é o igual (=), mas PHP oferece vários operadores de atribuição combinados que realizam uma operação e atribuem o resultado ao mesmo tempo:
+
+    1. **Operador de Atribuição Básico (=)**
+        • Atribui o valor do lado direito à variável do lado esquerdo. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = 5;
+                echo $a; // Imprime: 5
+            ?>
+        ```
+
+    2. **Adição e atribuição (+=)**
+        • Adiciona o valor do lado direito à variável do lado esquerdo e atribui o resultado à variável. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = 5;
+                $a += 3; // Equivalente a $a = $a + 3;
+                echo $a; // Imprime: 8
+            ?>
+        ```
+
+    3. **Multiplicação e atribuição (*=)**
+        • Multiplica o valor do lado direito pela variável do lado esquerdo e atribui o resultado à variável. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = 5;
+                $a *= 3; // Equivalente a $a = $a * 3;
+                echo $a; // Imprime: 15
+            ?>
+        ```
+
+    4. **Divisão e atribuição (/=)**
+        • Divide a variável do lado esquerdo pelo valor do lado direito e atribui o resultado à variável. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = 15;
+                $a /= 3; // Equivalente a $a = $a / 3;
+                echo $a; // Imprime: 5
+            ?>
+        ```
+
+    5. **Módulo e atribuição (%=)**
+        • Calcula o resto da divisão da variável do lado esquerdo pelo valor do lado direito e atribui o resultado à variável. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = 5;
+                $a %= 2; // Equivalente a $a = $a % 2;
+                echo $a; // Imprime: 1
+            ?>
+        ```
+
+    6. **Concatenação e atribuição (.=)**
+        • Concatena a string do lado direito à variável do lado esquerdo e atribui o resultado à variável. Veja o exemplo:
+        ```PHP
+            <?php
+                $a = "Olá";
+                $a .= ", mundo!"; // Equivalente a $a = $a . ", mundo!";
+                echo $a; // Imprime: Olá, mundo!
+            ?>
+        ```
