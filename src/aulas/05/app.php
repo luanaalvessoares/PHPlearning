@@ -137,3 +137,39 @@
 
     echo "<br><br> ------------------------------------------- <br><br>";
 ?>
+
+
+<?php
+// Crie um script PHP que faça o seguinte: Use um laço for para gerar uma lista de 20 números aleatórios entre 1 e 100. Use um laço while para iterar sobre essa lista e contar quantos números são pares e quantos são ímpares. Use estruturas if/else para verificar e exibir se cada número é par ou ímpar durante a iteração no while.
+
+    $numeros = [];
+
+    for ($i = 0; $i < 20; $i++) {
+        $numeros[] = rand(1, 100);
+    }
+
+    $contagemPares = 0;
+    $contagemImpares = 0;
+
+    $index = 0;
+
+    while ($index < count($numeros)) {
+        $numeroAtual = $numeros[$index];
+
+        if ($numeroAtual % 2 === 0) {
+            $contagemPares++;
+            echo "Número $numeroAtual é par.<br>";
+        } else {
+            $contagemImpares++;
+            echo "Número $numeroAtual é ímpar.<br>";
+        }
+        
+        $index++;
+    }
+
+    echo "<br><br>Números gerados: ";
+    print_r($numeros);
+
+    echo "<br><br>Total de números pares: $contagemPares";
+    echo "<br><br>Total de números ímpares: $contagemImpares";
+?>
