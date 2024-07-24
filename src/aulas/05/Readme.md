@@ -187,5 +187,3 @@ A estrutura de repetição while é usada para executar um bloco de código repe
     • Execução: O bloco de código dentro do while exibe o elemento atual do array.
     • Incremento: $index++ incrementa o valor de $index em 1 a cada iteração.
     • Terminação: O laço while termina quando todos os elementos do array são processados.
-
-
